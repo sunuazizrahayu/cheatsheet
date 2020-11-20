@@ -14,3 +14,9 @@ redis-cli -h <host> -p <port>
 | set `<key>` `<value>`| set name sunu |gunakan _double quotes_ pada _key_ ataupun _value_ kalau memiliki spasi|
 | | set name "kang sunu"| |
 | | set "full name" "kang sunu"||
+| get `<key>`|get name|mengambil data|
+| | | - dari contoh akan menampilkan _sunu_|
+| | | - bila data tidak ada, akan menampilkan _(nil)_|
+|exist `<key>`| exist name | mengecek apakah suatu key memiliki value, response berbentuk integer 0 atau 1|
+| | | - *0* tidak ada data|
+| | | - *1* ada data|
