@@ -51,5 +51,10 @@ redis-cli -h <host> -p <port>
 ## pipeline
 digunakan untuk mengirim data ke redis sekaligus, seperti bulk/batch
 ```
+# command
 redis-cli --pipe
+
+
+# example
+cat daftar-command-set-di-redis.txt | redis-cli -h localhost --pipe
 ```
