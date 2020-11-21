@@ -14,7 +14,7 @@ redis-cli -h <host> -p <port>
 | set `<key>` `<value>`| set name sunu |gunakan _double quotes_ pada _key_ ataupun _value_ kalau memiliki spasi|
 | | set name "kang sunu"| |
 | | set "full name" "kang sunu"||
-|append `<key>` `<value>` | append name " aziz" | menambahkan data di belakang data yang sudah ada|
+| append `<key>` `<value>` | append name " aziz" | menambahkan data di belakang data yang sudah ada|
 | get `<key>`|get name|mengambil data|
 | | | - dari contoh akan menampilkan _sunu_|
 | | | - bila data tidak ada, akan menampilkan _(nil)_|
