@@ -1,8 +1,0 @@
-membuat data seperti AI
-
-# manual (not recommended)
-| Operasi | Keterangan | contoh |
-|---------|------------|--------|
-| value = GET `<key>` | | |
-| value = value + 1 | | |
-| set `<key>` value | | |
