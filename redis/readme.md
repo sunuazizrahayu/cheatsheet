@@ -13,7 +13,7 @@ redis-cli -h <host> -p <port>
 |---------|------------|------------|
 | set `<key>` `<value>`| set name sunu |gunakan _double quotes_ pada _key_ ataupun _value_ kalau memiliki spasi|
 | | set name "kang sunu"| |
-| | set "name full" "kang sunu"||
+| | set "full name" "kang sunu"||
 | append `<key>` `<value>` | append name " aziz" | menambahkan data di belakang data yang sudah ada|
 | get `<key>`|get name|mengambil data|
 | | | - dari contoh akan menampilkan _sunu_|
@@ -21,12 +21,17 @@ redis-cli -h <host> -p <port>
 |exist `<key>`| exist name | mengecek apakah suatu key memiliki value, response berbentuk integer 0 atau 1|
 | | | - *0* tidak ada data|
 | | | - *1* ada data|
-|keys `<pattern>` | keys name* | mencari keys yang ada berdasarkan _pattern_|
-||| mengambil data dengan keys yang berawalan _name_ |
+|keys `<pattern>` | keys `*name` | mencari keys yang ada berdasarkan _pattern_|
+||| mengambil data dengan keys yang berakhiran _name_ |
 |del `<key>` `<key...>`|del name "full name"|hapus data, menghapus data _*name*_ dan *_full name_*|
 
-### strings range
+#### strings range
 |Operasi|keterangan|contoh|hasil|
 |---|---|---|---|
 |setrange `<key>` `<offset>` `<value>` | overwrite data yang sudah ada dari index offset | setrange name 0 aziz | aziz aziz |
 |getrange `<key>` `<start>` `<end>` | seperti fungsi _*substr*_, mengambil data sebagian | getrange name 0 2 | sun |
+
+#### multile string
+| Operasi | keterangan | contoh |
+|---|---|---|
+| mget `<key1>` `<key2>` `<...>` | mengambil beberapa data sekaligus | mget name "full name"|
