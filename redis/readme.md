@@ -1,3 +1,6 @@
+<a href="https://github.com/ProgrammerZamanNow/belajar-redis" target="_blank">reference</a>
+
+
 ## konek redis server
 ```
 redis-cli -h <host> -p <port>
