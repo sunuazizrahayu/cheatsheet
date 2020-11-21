@@ -21,6 +21,6 @@ redis-cli -h <host> -p <port>
 |exist `<key>`| exist name | mengecek apakah suatu key memiliki value, response berbentuk integer 0 atau 1|
 | | | - *0* tidak ada data|
 | | | - *1* ada data|
-|keys `<pattern>` | keys name* | mengambil data berdasarkan _pattern_|
+|keys `<pattern>` | keys name* | mencari keys yang ada berdasarkan _pattern_|
 ||| mengambil data dengan keys yang berawalan _name_ |
 |del `<key>` `<key...>`|del name "full name"|hapus data, menghapus data _*name*_ dan *_full name_*|
