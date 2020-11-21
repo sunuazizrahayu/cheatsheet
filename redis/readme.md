@@ -24,3 +24,9 @@ redis-cli -h <host> -p <port>
 |keys `<pattern>` | keys name* | mencari keys yang ada berdasarkan _pattern_|
 ||| mengambil data dengan keys yang berawalan _name_ |
 |del `<key>` `<key...>`|del name "full name"|hapus data, menghapus data _*name*_ dan *_full name_*|
+
+### strings range
+|Operasi|keterangan|contoh|hasil|
+|---|---|---|---|
+|setrange `<key>` `<offset>` `<value>` | overwrite data yang sudah ada dari index offset | setrange name 0 aziz | aziz aziz |
+|getrange `<key>` `<start>` `<end>` | seperti fungsi _*substr*_, mengambil data sebagian | getrange name 0 2 | sun |
