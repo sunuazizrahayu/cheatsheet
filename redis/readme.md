@@ -42,3 +42,11 @@ redis-cli -h <host> -p <port>
 |---------|------------|
 |flushdb | menghapus data di database yang sekarang digunakan|
 |flushall | menghapus semua data di semua databasee|
+
+
+
+## pipeline
+digunakan untuk mengirim data ke redis sekaligus, seperti bulk/batch
+```
+redis-cli --pipe
+```
