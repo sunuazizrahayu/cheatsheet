@@ -23,6 +23,9 @@ info memory
 ## config
 ```
 config help
+
+#contoh
+config get <section>
 ```
 
 contoh
@@ -34,7 +37,15 @@ config get *
 config get databases
 ```
 
-# slowlog
+## slowlog
 ```
 slowlog help
 ```
+
+
+## client connection
+```client list```
+
+```client id```
+
+```client kill <ip>:<port>```
