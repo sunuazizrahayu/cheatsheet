@@ -1,10 +1,12 @@
 melihat informasi server
+# server information
 
 ## masuk ke redis-cli
 ```redis
 redis-cli -h localhost
 ```
 
+# general
 ## server info
 menampilkan semua info
 ```redis-cli
@@ -43,7 +45,7 @@ slowlog help
 ```
 
 
-## client connection
+# client connection
 ```client list```
 
 ```client id```
