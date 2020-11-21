@@ -35,3 +35,4 @@ redis-cli -h <host> -p <port>
 | Operasi | keterangan | contoh |
 |---|---|---|
 | mget `<key1>` `<key2>` `<...>` | mengambil beberapa data sekaligus | mget name "full name"|
+|mset `<key1>` `<value1>` `<key2> <value2>` ... | set data sekaligus | mset name sunu middle aziz last rahayu|
